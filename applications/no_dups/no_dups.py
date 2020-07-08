@@ -1,6 +1,15 @@
-def no_dups(s):
-    # Your code here
+# split strings by whitespace
+# iterate through list
+# remove any duplicates
+# remove whitespace at end
 
+def no_dups(s):
+    s = s.split()
+    res = list(dict.fromkeys(s))
+    string = " "
+    result = string.join(res).strip()
+
+    return result
 
 
 if __name__ == "__main__":
